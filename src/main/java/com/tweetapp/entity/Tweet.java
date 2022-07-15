@@ -28,6 +28,13 @@ public class Tweet {
         this.emailId = emailId;
         this.message = message;
         this.likes = likes;
-        dateOfTweet = new Date();
+        dateOfTweet = new Date(); // Current date timestamp
+    }
+
+    public Tweet (String emailId, String message) {
+        this.emailId = emailId;
+        this.message = message;
+        this.likes = 0; // New tweet will have 0 likes initially
+        dateOfTweet = new Date(); // Current date timestamp
     }
 }
